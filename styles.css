@@ -747,7 +747,7 @@ h1{
 }
 
 .contact-page{
-    border: 2px solid turquoise;
+    /* border: 2px solid turquoise; */
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -756,7 +756,7 @@ h1{
 }
 
 .contact-head{
-    border: 2px solid hotpink;
+    /* border: 2px solid hotpink; */
     text-align: center;
     width: 20%;
     margin-bottom: 20px;
@@ -765,14 +765,14 @@ h1{
 }
 
 .contact-form{
-    border: 2px solid hotpink;
+    /* border: 2px solid hotpink; */
     width: 75%;
     height: 75%;
     display: flex;
 }
 
 .c-form{
-    border: 2px solid white;
+    /* border: 2px solid white; */
     width: 100%;
     box-shadow: 5px 5px 0px #242424;
     padding: 20px 20px 20px;
