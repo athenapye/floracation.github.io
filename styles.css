@@ -5,6 +5,10 @@ body{
     cursor: default;
 }
 
+@media (max-width:900px){
+    
+}
+
 .head-div{
     /* border: 2px solid yellow; */
     margin-bottom: 50px;
@@ -34,6 +38,12 @@ body{
     color: hotpink;
 }
 
+@media (max-width: 900px){
+    .floracation{
+        font-size: 33px;
+    }
+}
+
 .right-head{
     /* border: 2px solid white; */
     width: 66%;
@@ -46,7 +56,7 @@ body{
 .shop-button, .about-button{
     /* border: 2px solid orange; */
     width: 85%;
-    min-width: 160px;
+    min-width: 25%;
     display: inline-block;
     position: relative;
     cursor: pointer;
@@ -59,14 +69,17 @@ body{
 
 .shop-button:hover, .about-button:hover{
     /* border: 2px solid indigo; */
+    display: flex;
+    justify-content: center;
     background-color: #4D693A;
 }
 
 .shop-content, .about-content{
     /* border: 2px solid turquoise; */
     display: none;
-    position: relative;
-    min-width: 160px;
+    position: absolute;
+    right: 12%;
+    min-width: 150%;
     box-shadow: 5px 5px 0px #242424;
     z-index: 1;
     background-color: #4D693A;
@@ -74,7 +87,7 @@ body{
 
 .shop-content a, .about-content a{
     display: block;
-    text-align: center;
+    text-align: right;
     text-decoration: none;
     color: #2F332D;
 }
@@ -147,8 +160,9 @@ body{
 }
 
 h1{
+    /* border: 2px solid black; */
     color: #FFFDFA;
-    font-size: 35px;
+    font-size: 175%;
 }
 
 .bouquets-page{
@@ -158,15 +172,28 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .bouquets-head{
     /* border: 2px solid coral; */
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1%;
     width: 20%;
-    box-shadow: 5px 5px 0px #242424;
+    box-shadow: 5px 5px 0px black;
     background-color: #4D693A;
+}
+
+.b-head{
+    /* border: 2px solid turquoise; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+    width: 75%;
+    font-size: 150%;
 }
 
 .bouquet-intro{
@@ -186,6 +213,8 @@ h1{
     height: 75%;
     display: flex;
     flex-direction: column;
+    box-shadow: 5px 5px 0px #242424;
+    background-color: #4D693A;
 }
 
 .bshop1{
@@ -214,32 +243,12 @@ h1{
     width: 25%;
 }
 
-.bquote1{
-    /* border: 2px solid coral; */
-    color: #FFFDFA;
-}
-
-.bquote1:hover{
-    background-color: #4D693A;
-    cursor: pointer;
-}
-
 .bprice2{
     /* border: 2px solid lime; */
     display: flex;
     align-items: center;
     justify-content: center;
     width: 25%;
-}
-
-.bquote2{
-    /* border: 2px solid turquoise; */
-    color: #FFFDFA;
-}
-
-.bquote2:hover{
-    background-color: #4D693A;
-    cursor: pointer;
 }
 
 .image-3{
@@ -255,12 +264,15 @@ h1{
 .bshop2{
     /* border: 2px solid hotpink; */
     height: 33%;
+    width: 100%;
     display: flex;
 }
 
 .image-4{
     /* border: 2px solid yellow; */
     width: 25%;
+    display: flex;
+    justify-content: center;
 }
 
 .img4{
@@ -275,16 +287,6 @@ h1{
     align-items: center;
 }
 
-.bquote3{
-    /* border: 2px solid blue; */
-    color: #FFFDFA;
-}
-
-.bquote3:hover{
-    background-color: #4D693A;
-    cursor: pointer;
-}
-
 .bprice4{
     /* border: 2px solid cyan; */
     width: 25%;
@@ -293,15 +295,6 @@ h1{
     align-items: center;
 }
 
-.bquote4{
-    /* border: 2px solid red; */
-    color: #FFFDFA;
-}
-
-.bquote4:hover{
-    background-color: #4D693A;
-    cursor: pointer;
-}
 
 .image-5{
     /* border: 2px solid yellow; */
@@ -324,6 +317,7 @@ h1{
 }
 
 .img6{
+    height: 100%;
     width: 100%;
 }
 
@@ -335,32 +329,12 @@ h1{
     justify-content: center;
 }
 
-.bquote5{
-    /* border: 2px solid wheat; */
-    color: #FFFDFA;
-}
-
-.bquote5:hover{
-    background-color: #4D693A;
-    cursor: pointer;
-}
-
 .bprice6{
     /* border: 2px solid yellow; */
     width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.bquote6{
-    /* border: 2px solid blue; */
-    color: #FFFDFA;
-}
-
-.bquote6:hover{
-    background-color: #4D693A;
-    cursor: pointer;
 }
 
 .image-7{
@@ -371,6 +345,56 @@ h1{
 .img7{
     /* border: 2px solid violet; */
     width: 100%;
+}
+
+.shop-drop{
+    /* border: 2px solid white; */
+    width: 75%;
+    height: 50%;
+}
+
+.shop-drp{
+    /* border: 2px solid black; */
+    position: relative;
+    width: 100%;
+}
+
+.shop-cart{
+    /* border: 2px solid red; */
+    display: none;
+    position: absolute;
+}
+
+.shop-drp:hover .shop-cart{
+    /* border: 2px solid yellow; */
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    width: 95.25%;
+    padding: 5px 5px 10px;
+    box-shadow: 5px 5px 0px #242424;
+    background-color: #88aa71;
+    color: #FFFDFA;
+}
+
+.rose-bttn, .a-rose-bttn, .tulip-bttn, .a-tulip-bttn, .a-bouquet-bttn, .lily-bttn, .mon-bttn, .fic-bttn, .san-bttn, .alo-bttn, .euc-bttn, .cal-bttn{
+    /* border: 2px solid chartreuse; */
+    width: 100%;
+    height: 100%;
+    padding: 10px 5px 5px;
+    border: none;
+    background-color: #4D693A;
+    color: #FFFDFA;
+}
+
+.rose-bttn:hover, .a-rose-bttn:hover, .tulip-bttn:hover, .a-tulip-bttn:hover, .a-bouquet-bttn:hover, .lily-bttn:hover, .mon-bttn:hover, .fic-bttn:hover, .san-bttn:hover, .alo-bttn:hover, .euc-bttn:hover, .cal-bttn:hover{
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 5px 5px 0px #242424;
+    background-color: #88aa71;
 }
 
 .plants-page{
@@ -396,6 +420,8 @@ h1{
     width: 75%;
     display: flex;
     flex-direction: column;
+    box-shadow: 5px 5px 0px #242424;
+    background-color: #4D693A;
 }
 
 .plants-intro{
@@ -430,22 +456,12 @@ h1{
     align-items: center;
 }
 
-.pquote1{
-    /* border: 2px solid blue; */
-    color: #FFFDFA;
-}
-
 .pprice2{
     /* border: 2px solid plum; */
     width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.pquote2{
-    /* border: 2px solid darkcyan; */
-    color: #FFFDFA;
 }
 
 .image-9{
@@ -483,22 +499,12 @@ h1{
     align-items: center;
 }
 
-.pquote3{
-    /* border: 2px solid white; */
-    color: #FFFDFA;
-}
-
 .pprice4{
     /* border: 2px solid orange; */
     width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.pquote4{
-    /* border: 2px solid turquoise; */
-    color: #FFFDFA;
 }
 
 .image-11{
@@ -536,22 +542,12 @@ h1{
     align-items: center;
 }
 
-.pquote5{
-    /* border: 2px solid black; */
-    color: #FFFDFA;
-}
-
 .pprice6{
     /* border: 2px solid cyan; */
     width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.pquote6{
-    /* border: 2px solid white; */
-    color: #FFFDFA;
 }
 
 .image-13{
@@ -563,12 +559,6 @@ h1{
     /* border: 2px solid black; */
     width: 100%;
     height: 100%;
-}
-
-.pquote1:hover, .pquote2:hover, .pquote3:hover, .pquote4:hover, .pquote5:hover, .pquote6:hover{
-    /* border: 2px solid white; */
-    background-color: #4D693A;
-    cursor: pointer;
 }
 
 .address-page{
@@ -594,10 +584,18 @@ h1{
     border: 5px solid hotpink;
     width: 50%;
     display: flex;
+    overflow: hidden;
+    cursor: zoom-in;
 }
 
 .address-map{
+    border: 2px solid black;
     width: 100%;
+    transition: 0.3s ease;
+}
+
+.address-map:hover{
+    transform: scale(200%);
 }
 
 .address-intro{
@@ -781,8 +779,53 @@ h1{
 }
 
 .message-box{
+    /* width: 50%; */
     width: 1030px;
     height: 290px;
+}
+
+@media (max-width: 900px){
+    .message-box{
+        width: 50%;
+    }
+}
+
+.submit-page{
+    /* border: 2px solid hotpink; */
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submit-head{
+    /* border: 2px solid white; */
+    width: 30%;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 0px #242424;
+    background-color: #4D693A;
+}
+
+.submit-message{
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 10%;
+}
+
+.sub-mssg{
+    /* border: 2px solid red; */
+    box-shadow: 5px 5px 0px #242424;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    font-size: 125%;
+    background-color: #4D693A;
+    color: #FFFDFA;
 }
 
 .footer-div{
@@ -798,7 +841,7 @@ h1{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 25px;
+    font-size: 150%;
     height: 50px;
 }
 
@@ -850,3 +893,4 @@ h1{
 .linkd-link:hover{
     background-color: #88aa71;
 }
+
